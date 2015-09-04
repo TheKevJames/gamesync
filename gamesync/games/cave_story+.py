@@ -8,10 +8,9 @@ from . import (add_folder, backup_folder, get_folder_status, remove_folder,
 logger = logging.getLogger(__name__)
 
 
-SAVES = os.path.join(os.path.expanduser('~'), '.local', 'share',
-                     'FasterThanLight')
+SAVES = os.path.join(os.path.expanduser('~'), '.local', 'share', 'CaveStory+')
 SAVES_STATUS = get_folder_status(SAVES)
-TOKEN = 'faster_than_light'
+TOKEN = 'cave_story+'
 
 
 def add(synced_saves):
