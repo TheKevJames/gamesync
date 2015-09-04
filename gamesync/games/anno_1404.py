@@ -40,6 +40,9 @@ def remove():
     remove_folder(logger, SAVES_STATUS, SAVES)
 
 
-def status():
-    status_folder(logger, PROFILE_STATUS)
-    status_folder(logger, SAVES_STATUS)
+def status(display=None):
+    if display == 'log':
+        status_folder(logger, PROFILE_STATUS)
+        status_folder(logger, SAVES_STATUS)
+    else:
+        return [PROFILE_STATUS, SAVES_STATUS]

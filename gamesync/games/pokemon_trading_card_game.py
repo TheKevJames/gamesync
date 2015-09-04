@@ -39,6 +39,9 @@ def remove():
     remove_file(logger, SAVE_STATUS, SAVE)
 
 
-def status():
-    status_file(logger, BINARY_STATUS)
-    status_file(logger, SAVE_STATUS)
+def status(display=None):
+    if display == 'log':
+        status_file(logger, BINARY_STATUS)
+        status_file(logger, SAVE_STATUS)
+    else:
+        return [BINARY_STATUS, SAVE_STATUS]
