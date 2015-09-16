@@ -63,12 +63,16 @@ DEFINITIONS = {
     },
     'cities_skylines': {
         PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Colossal Order',
+                       'Cities: Skylines'),
             'saves': ('.local', 'share', 'Colossal Order', 'Cities_Skylines'),
         },
     },
     'creeper_world_3': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'creeperworld3'),
+            'preferences': ('.config', 'unity3d', 'Knuckle Cracker LLC',
+                            'Creeper World 3'),
             'save': ('Documents', 'creeperworld3'),
         },
     },
@@ -96,6 +100,11 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'preferences': ('Library', 'Preferences', 'Blizzard',
                             'Heartstone'),
+        },
+    },
+    'kerbal_space_program': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Squad', 'Kerbal Space Program'),
         },
     },
     'knights_of_the_old_republic': {
@@ -138,6 +147,8 @@ DEFINITIONS = {
     },
     'pillars_of_eternity': {
         PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Obsidian Entertainment',
+                       'Pillars of Eternity'),
             'saves': ('.local', 'share', 'PillarsOfEternity'),
         },
     },
@@ -169,6 +180,12 @@ DEFINITIONS = {
     'risk_of_rain': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'Risk_of_Rain'),
+        },
+    },
+    'shadowrun_returns': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Harebrained Schemes',
+                       'Shadowrun'),
         },
     },
     'skyrim': {
@@ -206,6 +223,8 @@ DEFINITIONS = {
                       'Contents', 'Saves'),
         },
         PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Endless Loop Studios',
+                       'Survivor Squad'),
             'saves': ('.local', 'share', 'Steam', 'steamapps', 'common',
                       'Survivor Squad', 'Survivor_Squad_Data', 'Saves'),
         },
