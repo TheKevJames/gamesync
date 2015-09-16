@@ -26,7 +26,7 @@ setuptools.setup(
     install_requires=requirements,
     classifiers=[
         'Programming Language :: Python',
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Natural Language :: English',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: MIT License',
