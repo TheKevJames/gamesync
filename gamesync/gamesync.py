@@ -15,7 +15,7 @@ from .commands import add, backup, create_gamesync_folder, remove, status
 from .definitions import DEFINITIONS
 
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 
 
 def main(args=None):
