@@ -76,6 +76,11 @@ DEFINITIONS = {
             'save': ('Documents', 'creeperworld3'),
         },
     },
+    'door_kickers': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'DoorKickers'),
+        },
+    },
     'dungeons_of_dredmor': {
         PLATFORM_DEFAULT: {
             'saves': ('Library', 'Application Support', 'Dungeons of Dredmor'),
@@ -143,6 +148,12 @@ DEFINITIONS = {
     'metro_2033': {
         PLATFORM_DEFAULT: {
             'saves': ('My Documents', '4A Games', 'Metro 2033'),
+        },
+    },
+    'monaco': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'Pocketwatch Games', 'Monaco',
+                       'SAVEDATA'),
         },
     },
     'pillars_of_eternity': {
