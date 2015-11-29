@@ -252,6 +252,11 @@ DEFINITIONS = {
             'saves': ('.This War of Mine', ),
         },
     },
+    'tis_100': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'TIS-100'),
+        },
+    },
     'war_thunder': {
         PLATFORM_DEFAULT: {
             'saves': ('My Games', 'WarThunder'),
