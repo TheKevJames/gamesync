@@ -258,6 +258,11 @@ DEFINITIONS = {
             'saves': ('Electronic Arts', 'The Sims 4'),
         },
     },
+    'the_swapper': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'Facepalm Games', 'The Swapper 1000'),
+        },
+    },
     'this_war_of_mine': {
         PLATFORM_DEFAULT: {
             'saves': ('.This War of Mine', ),
