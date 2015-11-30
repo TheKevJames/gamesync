@@ -96,9 +96,20 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'FasterThanLight'),
         },
     },
+    'forced': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'BetaDwarf ApS', 'FORCED'),
+        },
+    },
     'godus': {
         PLATFORM_DEFAULT: {
             'saves': ('Library', 'Application Support', 'godus'),
+        },
+    },
+    'guns_of_icarus': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Muse Games',
+                       'GunsOfIcarusOnline'),
         },
     },
     'hearthstone': {
@@ -270,6 +281,7 @@ DEFINITIONS = {
     },
     'tis_100': {
         PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Zachtronics', 'TIS-100'),
             'saves': ('.local', 'share', 'TIS-100'),
         },
     },
