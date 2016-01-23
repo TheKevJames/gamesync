@@ -139,6 +139,8 @@ DEFINITIONS = {
     },
     'league_of_legends': {
         PLATFORM_DEFAULT: {
+            'config': ('.PlayOnLinux', 'wineprefix', 'LeagueOfLegends', 'drive_c',
+                       'Riot Games', 'League of Legends', 'Config'),
             'preferences': ('.PlayOnLinux', 'wineprefix', 'LeagueOfLegends',
                             'drive_c', 'Riot Games', 'League of Legends',
                             'RADS', 'projects', 'lol_air_client', 'releases',
