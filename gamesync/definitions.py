@@ -16,15 +16,14 @@ DEFINITIONS = {
     },
     'anno_1404': {
         PLATFORM_WINDOWS: {
-            'profiles': ('AppData', 'Roaming', 'Ubisoft', 'Anno1404',
-                         'Profiles'),
-            'saves': ('My Documents', 'Anno 1404', 'Savegames'),
+            'profiles': ('AppData', 'Roaming', 'Ubisoft', 'Anno1404'),
+            'saves': ('My Documents', 'Anno 1404'),
         },
         PLATFORM_DEFAULT: {
             'profiles': ('.PlayOnLinux', 'wineprefix', 'Anno1404', 'drive_c',
                          'users', USERNAME, 'Application Data', 'Ubisoft',
-                         'Anno1404', 'Profiles'),
-            'saves': ('Anno 1404', 'Savegames'),
+                         'Anno1404'),
+            'saves': ('Anno 1404', ),
         },
     },
     'assassins_creed_brotherhood': {
