@@ -62,7 +62,8 @@ def backup(game):
                 shutil.copyfile(location, token)
         elif location_status == MISSING:
             fail = True
-            print('{}MISSING DATA:{} {}'.format(COLOR_RED, COLOR_END, location))
+            print('{}MISSING DATA:{} {}'.format(COLOR_RED, COLOR_END,
+                                                location))
 
     if not fail:
         status(game, force_display=True)
@@ -108,10 +109,12 @@ def status(game, force_display=False):
     display_name = ' '.join(game.split('_')).title()
     if all(x == MISSING for x in statuses):
         if force_display:
-            print('{}NO SAVE:{} {}'.format(COLOR_YELLOW, COLOR_END, display_name))
+            print('{}NO SAVE:{} {}'.format(COLOR_YELLOW, COLOR_END,
+                                           display_name))
     elif all(x == LINKED for x in statuses):
         print('{}OK:{} {}'.format(COLOR_GREEN, COLOR_END, display_name))
     elif all(x == UNLINKED for x in statuses):
-        print('{}NOT SYNCED:{} {}'.format(COLOR_YELLOW, COLOR_END, display_name))
+        print('{}NOT SYNCED:{} {}'.format(COLOR_YELLOW, COLOR_END,
+                                          display_name))
     else:
         print('{}ERROR:{} {}'.format(COLOR_RED, COLOR_END, display_name))
