@@ -21,7 +21,7 @@ def add(game):
 
     definition = get_definition(game)
 
-    for token, location in definition.iteritems():
+    for token, location in definition.items():
         location = os.path.join(HOME, os.path.join(*list(x for x in location)))
         location_status = get_status_from_path(location)
         token = os.path.join(GAMESYNC_FOLDER, game, token)
@@ -50,7 +50,7 @@ def backup(game):
     definition = get_definition(game)
 
     fail = False
-    for token, location in definition.iteritems():
+    for token, location in definition.items():
         location = os.path.join(HOME, os.path.join(*list(x for x in location)))
         location_status = get_status_from_path(location)
         token = os.path.join(GAMESYNC_FOLDER, game, token)
