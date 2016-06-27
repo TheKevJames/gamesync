@@ -16,7 +16,7 @@ HOME = os.path.expanduser('~')
 
 def add(game):
     if not valid(game):
-        print '%sBROKEN DEFINITION:%s %s' % (COLOR_RED, COLOR_END, game)
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
         return
 
     definition = get_definition(game)
@@ -44,7 +44,7 @@ def add(game):
 
 def backup(game):
     if not valid(game):
-        print '%sBROKEN DEFINITION:%s %s' % (COLOR_RED, COLOR_END, game)
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
         return
 
     definition = get_definition(game)
@@ -62,7 +62,7 @@ def backup(game):
                 shutil.copyfile(location, token)
         elif location_status == MISSING:
             fail = True
-            print '%sMISSING DATA:%s %s' % (COLOR_RED, COLOR_END, location)
+            print('{}MISSING DATA:{} {}'.format(COLOR_RED, COLOR_END, location))
 
     if not fail:
         status(game, force_display=True)
@@ -77,7 +77,7 @@ def create_gamesync_folder():
 
 def remove(game):
     if not valid(game):
-        print '%sBROKEN DEFINITION:%s %s' % (COLOR_RED, COLOR_END, game)
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
         return
 
     definition = get_definition(game)
@@ -94,7 +94,7 @@ def remove(game):
 
 def status(game, force_display=False):
     if not valid(game):
-        print '%sBROKEN DEFINITION:%s %s' % (COLOR_RED, COLOR_END, game)
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
         return
 
     definition = get_definition(game)
@@ -108,10 +108,10 @@ def status(game, force_display=False):
     display_name = ' '.join(game.split('_')).title()
     if all(x == MISSING for x in statuses):
         if force_display:
-            print '%sNO SAVE:%s %s' % (COLOR_YELLOW, COLOR_END, display_name)
+            print('{}NO SAVE:{} {}'.format(COLOR_YELLOW, COLOR_END, display_name))
     elif all(x == LINKED for x in statuses):
-        print '%sOK:%s %s' % (COLOR_GREEN, COLOR_END, display_name)
+        print('{}OK:{} {}'.format(COLOR_GREEN, COLOR_END, display_name))
     elif all(x == UNLINKED for x in statuses):
-        print '%sNOT SYNCED:%s %s' % (COLOR_YELLOW, COLOR_END, display_name)
+        print('{}NOT SYNCED:{} {}'.format(COLOR_YELLOW, COLOR_END, display_name))
     else:
-        print '%sERROR:%s %s' % (COLOR_RED, COLOR_END, display_name)
+        print('{}ERROR:{} {}'.format(COLOR_RED, COLOR_END, display_name))
