@@ -2,7 +2,7 @@
 """GameSync
 
 Usage:
-gamesync
+gamesync [--all]
 gamesync <game>...
 gamesync (-a | --add) <game>...
 gamesync (-b | --backup) <game>...
@@ -25,7 +25,7 @@ def main(args=None):
 
     if not args.get('<game>'):
         for game in sorted(DEFINITIONS.keys()):
-            status(game)
+            status(game, force_display=args.get('--all'))
 
         return
 
