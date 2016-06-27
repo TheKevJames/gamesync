@@ -302,6 +302,11 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'feral-interactive', 'XCOM'),
         },
     },
+    'zomboid': {
+        PLATFORM_DEFAULT: {
+            'saves': ('Zomboid', ),
+        },
+    },
 }
 
 
