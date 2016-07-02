@@ -14,34 +14,6 @@ COLOR_YELLOW = '\033[93m'
 HOME = os.path.expanduser('~')
 
 
-def add(game):
-    if not valid(game):
-        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
-        return
-
-    definition = get_definition(game)
-
-    for token, location in definition.items():
-        location = os.path.join(HOME, os.path.join(*list(x for x in location)))
-        location_status = get_status_from_path(location)
-        token = os.path.join(GAMESYNC_FOLDER, game, token)
-
-        if location_status == LINKED:
-            continue
-        elif location_status == UNLINKED:
-            if os.path.isdir(location):
-                shutil.rmtree(location, token)
-            else:
-                os.remove(location, token)
-        elif location_status == MISSING:
-            os.makedirs(location)
-            shutil.rmtree(location)
-
-        os.symlink(token, location)
-
-    status(game, force_display=True)
-
-
 def backup(game):
     if not valid(game):
         print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
@@ -77,18 +49,14 @@ def create_gamesync_folder():
 
 
 def remove(game):
-    if not valid(game):
-        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
-        return
-
     definition = get_definition(game)
 
     for location in definition.values():
         location = os.path.join(HOME, os.path.join(*list(x for x in location)))
         location_status = get_status_from_path(location)
 
-        if location_status == LINKED:
-            os.unlink(location)
+        if location_status == UNLINKED:
+            shutil.rmtree(location)
 
     status(game, force_display=True)
 
@@ -118,3 +86,48 @@ def status(game, force_display=False):
                                           display_name))
     else:
         print('{}ERROR:{} {}'.format(COLOR_RED, COLOR_END, display_name))
+
+
+def sync(game):
+    if not valid(game):
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
+        return
+
+    definition = get_definition(game)
+
+    for token, location in definition.items():
+        location = os.path.join(HOME, os.path.join(*list(x for x in location)))
+        location_status = get_status_from_path(location)
+        token = os.path.join(GAMESYNC_FOLDER, game, token)
+
+        if location_status == LINKED:
+            continue
+        elif location_status == UNLINKED:
+            if os.path.isdir(location):
+                shutil.rmtree(location, token)
+            else:
+                os.remove(location, token)
+        elif location_status == MISSING:
+            os.makedirs(location)
+            shutil.rmtree(location)
+
+        os.symlink(token, location)
+
+    status(game, force_display=True)
+
+
+def unsync(game):
+    if not valid(game):
+        print('{}BROKEN DEFINITION:{} {}'.format(COLOR_RED, COLOR_END, game))
+        return
+
+    definition = get_definition(game)
+
+    for location in definition.values():
+        location = os.path.join(HOME, os.path.join(*list(x for x in location)))
+        location_status = get_status_from_path(location)
+
+        if location_status == LINKED:
+            os.unlink(location)
+
+    status(game, force_display=True)

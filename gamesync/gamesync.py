@@ -4,14 +4,16 @@
 Usage:
 gamesync [--all]
 gamesync <game>...
-gamesync (-a | --add) <game>...
 gamesync (-b | --backup) <game>...
 gamesync (-r | --remove) <game>...
+gamesync (-s | --sync) <game>...
+gamesync (-u | --unsync) <game>...
 """
 from docopt import docopt
 import sys
 
-from .commands import add, backup, create_gamesync_folder, remove, status
+from .commands import (backup, create_gamesync_folder, remove, status, sync,
+                       unsync)
 from .definitions import DEFINITIONS
 
 
@@ -32,12 +34,14 @@ def main(args=None):
     create_gamesync_folder()
 
     game = '_'.join(args.get('<game>')).lower()
-    if args.get('-a') or args.get('--add'):
-        add(game)
-    elif args.get('-b') or args.get('--backup'):
+    if args.get('-b') or args.get('--backup'):
         backup(game)
     elif args.get('-r') or args.get('--remove'):
         remove(game)
+    elif args.get('-s') or args.get('--sync'):
+        sync(game)
+    elif args.get('-u') or args.get('--unsync'):
+        unsync(game)
     else:
         status(game, force_display=True)
 
