@@ -9,6 +9,12 @@ PLATFORM_WINDOWS = 'Windows'
 USERNAME = os.path.split(os.path.expanduser('~'))[-1]
 
 DEFINITIONS = {
+    'aeon_command': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Bat Country Games, LLC',
+                       'Aeon Command'),
+        },
+    },
     'age_of_empires_3': {
         PLATFORM_DEFAULT: {
             'saves': ('My Games', 'Age of Empires 3'),
@@ -69,10 +75,11 @@ DEFINITIONS = {
     },
     'creeper_world_3': {
         PLATFORM_DEFAULT: {
+            'data': ('Documents', 'CreeperWorld3', 'data'),
             'config': ('.config', 'creeperworld3'),
             'preferences': ('.config', 'unity3d', 'Knuckle Cracker LLC',
                             'Creeper World 3'),
-            'save': ('Documents', 'creeperworld3'),
+            'saves': ('Documents', 'creeperworld3'),
         },
     },
     'door_kickers': {
@@ -85,6 +92,12 @@ DEFINITIONS = {
             'saves': ('Library', 'Application Support', 'Dungeons of Dredmor'),
         },
     },
+    'electronic_super_joy': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Michael Todd Games',
+                       'Electronic Super Joy'),
+        },
+    },
     'fallout_new_vegas': {
         PLATFORM_DEFAULT: {
             'saves': ('My Documents', 'My Games', 'FalloutNV', 'Saves'),
@@ -93,6 +106,7 @@ DEFINITIONS = {
     'faster_than_light': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'FasterThanLight'),
+            'ssaves': ('.local', 'share', 'fasterthanlight'),
         },
     },
     'forced': {
@@ -115,6 +129,17 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'preferences': ('Library', 'Preferences', 'Blizzard',
                             'Heartstone'),
+        },
+    },
+    'human_resource_machine': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'Tomorrow Corporation',
+                       'Human Resource Machine'),
+        },
+    },
+    'interloper': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'Interloper'),
         },
     },
     'kerbal_space_program': {
@@ -162,10 +187,21 @@ DEFINITIONS = {
             'saves': ('My Documents', '4A Games', 'Metro 2033'),
         },
     },
+    'mini_metro': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Dinosaur Polo Club',
+                       'MiniMetro'),
+        },
+    },
     'monaco': {
         PLATFORM_DEFAULT: {
             'config': ('.local', 'share', 'Pocketwatch Games', 'Monaco',
                        'SAVEDATA'),
+        },
+    },
+    'mushroom_11': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Untame', 'Mushroom 11'),
         },
     },
     'pillars_of_eternity': {
@@ -173,6 +209,13 @@ DEFINITIONS = {
             'config': ('.config', 'unity3d', 'Obsidian Entertainment',
                        'Pillars of Eternity'),
             'saves': ('.local', 'share', 'PillarsOfEternity'),
+        },
+    },
+    'pixel_piracy': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'VITALI KIRPU & QUADRO DELTA',
+                       'Pixel Piracy'),
+            'saves': ('.config', 'PixelPiracy'),
         },
     },
     'pokemon_firered': {
@@ -209,7 +252,15 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Harebrained Schemes',
                        'Shadowrun'),
+            'content': ('.config', 'Harebrained Schemes', 'Shadowrun Returns'),
+            'packs': ('Documents', 'Shadowrun Returns', 'ContentPacks'),
         },
+    },
+    'sins_of_a_solar_empire_rebellion': {
+        PLATFORM_DEFAULT: {
+            'saves': ('Documents', 'My Games', 'Ironclad Games',
+                      'Sins of a Solar Empire Rebellion'),
+        }
     },
     'skyrim': {
         PLATFORM_DEFAULT: {
@@ -252,6 +303,12 @@ DEFINITIONS = {
                       'Survivor Squad', 'Survivor_Squad_Data', 'Saves'),
         },
     },
+    'survivor_squad_gauntlets': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Endless Loop Studios',
+                       'Survivor Squad Gauntlets'),
+        },
+    },
     'tales_of_majeyal': {
         PLATFORM_DEFAULT: {
             'saves': ('.t-engine', ),
@@ -275,6 +332,12 @@ DEFINITIONS = {
             'saves': ('Electronic Arts', 'The Sims 4'),
         },
     },
+    'the_static_speaks_my_name': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'jesse barksdale',
+                       'the static speaks my name'),
+        },
+    },
     'the_swapper': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'Facepalm Games', 'The Swapper 1000'),
@@ -289,6 +352,11 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Zachtronics', 'TIS-100'),
             'saves': ('.local', 'share', 'TIS-100'),
+        },
+    },
+    'towerfall': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'TowerFall'),
         },
     },
     'war_thunder': {
