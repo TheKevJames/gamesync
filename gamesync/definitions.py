@@ -221,13 +221,13 @@ DEFINITIONS = {
     'pokemon_firered': {
         PLATFORM_DEFAULT: {
             'binary.zip': ('.vbam', 'Pokemon FireRed.zip'),
-            'savefile.sav': ('.vbam', 'Pokemon FireRed.sav'),
+            'savefile.sav': ('.wxvbam', 'Pokemon FireRed.sav'),
         },
     },
     'pokemon_trading_card_game': {
         PLATFORM_DEFAULT: {
             'binary.zip': ('.vbam', 'Pokemon Trading Card Game.zip'),
-            'savefile.sav': ('.vbam', 'Pokemon Trading Card Game.sav'),
+            'savefile.sav': ('.wxvbam', 'Pokemon Trading Card Game (USA).sav'),
         },
     },
     'prison_architect': {
