@@ -68,24 +68,27 @@ def status(game, force_display=False):
 
     definition = get_definition(game)
 
-    statuses = list()
+    statuses = dict()
     for location in definition.values():
         location = os.path.join(HOME, os.path.join(*list(x for x in location)))
         location_status = get_status_from_path(location)
-        statuses.append(location_status)
+        statuses[location] = location_status
 
     display_name = ' '.join(game.split('_')).title()
-    if all(x == MISSING for x in statuses):
+    if all(x == MISSING for x in statuses.values()):
         if force_display:
             print('{}NO SAVE:{} {}'.format(COLOR_YELLOW, COLOR_END,
                                            display_name))
-    elif all(x == LINKED for x in statuses):
+    elif all(x == LINKED for x in statuses.values()):
         print('{}OK:{} {}'.format(COLOR_GREEN, COLOR_END, display_name))
-    elif all(x == UNLINKED for x in statuses):
+    elif all(x == UNLINKED for x in statuses.values()):
         print('{}NOT SYNCED:{} {}'.format(COLOR_YELLOW, COLOR_END,
                                           display_name))
     else:
         print('{}ERROR:{} {}'.format(COLOR_RED, COLOR_END, display_name))
+        if force_display:
+            for location, status in statuses.items():
+                print('> {} -> {}{}{}'.format(location, COLOR_RED, status, COLOR_END))
 
 
 def sync(game):
