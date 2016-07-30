@@ -218,6 +218,12 @@ DEFINITIONS = {
             'saves': ('.config', 'PixelPiracy'),
         },
     },
+    'pokemon_emerald': {
+        PLATFORM_DEFAULT: {
+            'binary.zip': ('.vbam', 'Pokemon Emerald.zip'),
+            'savefile.sav': ('.wxvbam', 'Pokemon - Emerald Version (U).sav'),
+        },
+    },
     'pokemon_firered': {
         PLATFORM_DEFAULT: {
             'binary.zip': ('.vbam', 'Pokemon FireRed.zip'),
