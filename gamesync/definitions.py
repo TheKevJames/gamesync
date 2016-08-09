@@ -75,7 +75,6 @@ DEFINITIONS = {
     },
     'creeper_world_3': {
         PLATFORM_DEFAULT: {
-            'data': ('Documents', 'CreeperWorld3', 'data'),
             'config': ('.config', 'creeperworld3'),
             'preferences': ('.config', 'unity3d', 'Knuckle Cracker LLC',
                             'Creeper World 3'),
