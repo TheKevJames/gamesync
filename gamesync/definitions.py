@@ -167,7 +167,7 @@ DEFINITIONS = {
             'preferences': ('.PlayOnLinux', 'wineprefix', 'LeagueOfLegends',
                             'drive_c', 'Riot Games', 'League of Legends',
                             'RADS', 'projects', 'lol_air_client', 'releases',
-                            '0.0.1.207', 'deploy', 'preferences'),
+                            '0.0.1.209', 'deploy', 'preferences'),
         },
     },
     'legend_of_grimrock': {
