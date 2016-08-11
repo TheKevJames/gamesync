@@ -155,9 +155,8 @@ DEFINITIONS = {
     },
     'knights_of_the_old_republic_2': {
         PLATFORM_DEFAULT: {
-            'saves': ('.PlayOnLinux', 'wineprefix', 'Steam', 'drive_c',
-                      'Program Files', 'Steam', 'steamapps', 'common',
-                      'Knights of the Old Republic II', 'saves'),
+            'saves': ('.local', 'share', 'Steam', 'steamapps', 'common',
+                      'Knights of the Old Republic II', 'cloudsaves', '43202810'),
         },
     },
     'league_of_legends': {
