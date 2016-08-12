@@ -8,7 +8,17 @@ PLATFORM_WINDOWS = 'Windows'
 
 USERNAME = os.path.split(os.path.expanduser('~'))[-1]
 
+# TODO: fix "My Documents" location
+# TODO: generalize PlayOnLinux stuff
+# TODO: get these from different source
+STEAM_ID = '43202810'
+
 DEFINITIONS = {
+    'a_boy_and_his_blob': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'ABAHB'),
+        },
+    },
     'aeon_command': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Bat Country Games, LLC',
@@ -50,6 +60,14 @@ DEFINITIONS = {
                       'com.treefortress.Bardbarian'),
         },
     },
+    'bastion': {
+        PLATFORM_DEFAULT: {
+            'profiles': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                         '107100', 'local'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '107100', 'remote'),
+        },
+    },
     'borderlands_2': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'aspyr-media', 'borderlands 2'),
@@ -86,6 +104,14 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'DoorKickers'),
         },
     },
+    'dreamfall_chapters': {
+        PLATFORM_DEFAULT: {
+            'data': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                     '237850', 'remote'),
+            'saves': ('.config', 'unity3d', 'Red Thread Games',
+                      'Dreamfall Chapters'),
+        },
+    },
     'dungeons_of_dredmor': {
         PLATFORM_DEFAULT: {
             'saves': ('Library', 'Application Support', 'Dungeons of Dredmor'),
@@ -95,6 +121,8 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Michael Todd Games',
                        'Electronic Super Joy'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '244870', 'remote'),
         },
     },
     'fallout_new_vegas': {
@@ -111,6 +139,8 @@ DEFINITIONS = {
     'forced': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'BetaDwarf ApS', 'FORCED'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '249990', 'remote'),
         },
     },
     'godus': {
@@ -155,8 +185,10 @@ DEFINITIONS = {
     },
     'knights_of_the_old_republic_2': {
         PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'aspyr-media', 'kotor2'),
             'saves': ('.local', 'share', 'Steam', 'steamapps', 'common',
-                      'Knights of the Old Republic II', 'cloudsaves', '43202810'),
+                      'Knights of the Old Republic II', 'cloudsaves',
+                      '43202810'),
         },
     },
     'league_of_legends': {
@@ -166,7 +198,7 @@ DEFINITIONS = {
             'preferences': ('.PlayOnLinux', 'wineprefix', 'LeagueOfLegends',
                             'drive_c', 'Riot Games', 'League of Legends',
                             'RADS', 'projects', 'lol_air_client', 'releases',
-                            '0.0.1.209', 'deploy', 'preferences'),
+                            '0.0.1.211', 'deploy', 'preferences'),
         },
     },
     'legend_of_grimrock': {
@@ -189,17 +221,23 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Dinosaur Polo Club',
                        'MiniMetro'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '287980', 'remote'),
         },
     },
     'monaco': {
         PLATFORM_DEFAULT: {
             'config': ('.local', 'share', 'Pocketwatch Games', 'Monaco',
                        'SAVEDATA'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '113020', 'remote'),
         },
     },
     'mushroom_11': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Untame', 'Mushroom 11'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '243160', 'remote'),
         },
     },
     'pillars_of_eternity': {
@@ -242,6 +280,11 @@ DEFINITIONS = {
             'saves': ('.Prison Architect', ),
         },
     },
+    'project_zomboid': {
+        PLATFORM_DEFAULT: {
+            'saves': ('Zomboid', ),
+        },
+    },
     'reus': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'Reus'),
@@ -252,12 +295,27 @@ DEFINITIONS = {
             'config': ('.config', 'Risk_of_Rain'),
         },
     },
+    'rogue_legacy': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'RogueLegacy'),
+            'saves': ('.local', 'share', 'RogueLegacy'),
+        },
+    },
+    'rust': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Facepunch Studios LTD', 'Rust'),
+        },
+    },
     'shadowrun_returns': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Harebrained Schemes',
                        'Shadowrun'),
             'content': ('.config', 'Harebrained Schemes', 'Shadowrun Returns'),
+            'data': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                     '234650', 'local'),
             'packs': ('Documents', 'Shadowrun Returns', 'ContentPacks'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '234650', 'remote'),
         },
     },
     'sins_of_a_solar_empire_rebellion': {
@@ -269,6 +327,12 @@ DEFINITIONS = {
     'skyrim': {
         PLATFORM_DEFAULT: {
             'saves': ('My Documents', 'My Games', 'Skyrim', 'Saves'),
+        },
+    },
+    'solar_2': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '97000', 'remote'),
         },
     },
     'space_pirates_and_zombies': {
@@ -311,6 +375,8 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Endless Loop Studios',
                        'Survivor Squad Gauntlets'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '331720', 'remote'),
         },
     },
     'tales_of_majeyal': {
@@ -323,6 +389,8 @@ DEFINITIONS = {
             'saves': ('My Documents', 'My Games', 'Terraria'),
         },
         PLATFORM_DEFAULT: {
+            'profiles': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                         '105600', 'remote'),
             'saves': ('.local', 'share', 'Terraria'),
         },
     },
@@ -358,9 +426,23 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'TIS-100'),
         },
     },
-    'towerfall': {
+    'towerfall_ascension': {
         PLATFORM_DEFAULT: {
             'config': ('.local', 'share', 'TowerFall'),
+        },
+    },
+    'transistor': {
+        PLATFORM_DEFAULT: {
+            'profiles': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                         '237930', 'local'),
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '237930', 'remote'),
+        },
+    },
+    'unepic': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
+                      '233980', 'remote'),
         },
     },
     'war_thunder': {
@@ -376,11 +458,6 @@ DEFINITIONS = {
     'xcom': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'feral-interactive', 'XCOM'),
-        },
-    },
-    'zomboid': {
-        PLATFORM_DEFAULT: {
-            'saves': ('Zomboid', ),
         },
     },
 }
