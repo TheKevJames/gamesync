@@ -12,6 +12,7 @@ USERNAME = os.path.split(os.path.expanduser('~'))[-1]
 # TODO: generalize PlayOnLinux stuff
 # TODO: get these from different source
 STEAM_ID = '43202810'
+LEAGUE_VERSION = '0.0.1.230'
 
 DEFINITIONS = {
     'a_boy_and_his_blob': {
@@ -198,7 +199,7 @@ DEFINITIONS = {
             'preferences': ('.PlayOnLinux', 'wineprefix', 'LeagueOfLegends',
                             'drive_c', 'Riot Games', 'League of Legends',
                             'RADS', 'projects', 'lol_air_client', 'releases',
-                            '0.0.1.220', 'deploy', 'preferences'),
+                            LEAGUE_VERSION, 'deploy', 'preferences'),
         },
     },
     'legend_of_grimrock': {
