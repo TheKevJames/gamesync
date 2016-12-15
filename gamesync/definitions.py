@@ -461,6 +461,15 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'feral-interactive', 'XCOM'),
         },
     },
+    'yugioh_world_championship_tournament': {
+        PLATFORM_DEFAULT: {
+            'binary.zip': ('.vbam',
+                           'Yu-Gi-Oh World Championship Tournament 2004.zip'),
+            'savefile.sav': (
+                '.wxvbam',
+                'Yu-Gi-Oh! - World Championship Tournament 2004 (U) (M6).sav'),
+        },
+    },
 }
 
 
