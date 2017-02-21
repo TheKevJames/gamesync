@@ -1,5 +1,6 @@
-build
-dist
+build/*
+dist/*
+venv/*
 
 *.egg-info
 *.pyc
