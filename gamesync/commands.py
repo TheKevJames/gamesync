@@ -87,8 +87,9 @@ def status(game, force_display=False):
     else:
         print('{}ERROR:{} {}'.format(COLOR_RED, COLOR_END, display_name))
         if force_display:
-            for location, status in statuses.items():
-                print('> {} -> {}{}{}'.format(location, COLOR_RED, status, COLOR_END))
+            for location, stat in statuses.items():
+                print('> {} -> {}{}{}'.format(location, COLOR_RED, stat,
+                                              COLOR_END))
 
 
 def sync(game):

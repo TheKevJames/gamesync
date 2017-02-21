@@ -9,8 +9,9 @@ gamesync (-r | --remove) <game>...
 gamesync (-s | --sync) <game>...
 gamesync (-u | --unsync) <game>...
 """
-from docopt import docopt
 import sys
+
+from docopt import docopt
 
 from .commands import (backup, create_gamesync_folder, remove, status, sync,
                        unsync)
@@ -26,7 +27,7 @@ def main(args=None):
                       version='GameSync v' + __version__)
 
     if not args.get('<game>'):
-        for game in sorted(DEFINITIONS.keys()):
+        for game in sorted(DEFINITIONS):
             status(game, force_display=args.get('--all'))
 
         return
