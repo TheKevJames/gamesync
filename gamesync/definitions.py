@@ -77,6 +77,7 @@ DEFINITIONS = {
     'big_pharma': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Twice Circled', 'Big Pharma'),
+            'saves': ('.local', 'share', 'Big Pharma'),
         },
     },
     'borderlands_2': {
@@ -88,6 +89,11 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'saves': ('My Documents', 'My Games',
                       'Brothers - A Tale of Two Sons'),
+        },
+    },
+    'capsized': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'Capsized'),
         },
     },
     'cave_story+': {
@@ -207,6 +213,12 @@ DEFINITIONS = {
     'interloper': {
         PLATFORM_DEFAULT: {
             'config': ('.local', 'share', 'Interloper'),
+        },
+    },
+    'invisible_inc': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'Klei', 'InvisibleInc', 'settings'),
+            'saves': ('.local', 'share', 'Klei', 'InvisibleInc', 'saves'),
         },
     },
     'kerbal_space_program': {
@@ -414,6 +426,16 @@ DEFINITIONS = {
                       'StarCraft II'),
         },
     },
+    'stardew_valley': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.config', 'StardewValley'),
+        },
+    },
+    'super_meat_boy': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'SuperMeatBoy'),
+        },
+    },
     'survivor_squad': {
         PLATFORM_DARWIN: {
             'saves': ('Library', 'Application Support', 'Steam', 'SteamApps',
@@ -482,6 +504,22 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'TIS-100'),
         },
     },
+    'to_the_moon': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'freebirdgames', 'tothemoon'),
+        },
+    },
+    'toki_tori_2+': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'twotribes', 'toki_tori_2+'),
+        },
+    },
+    'tower_of_guns': {
+        PLATFORM_DEFAULT: {
+            'config': ('.local', 'share', 'TerriblePostureGames',
+                       'TowerOfGuns'),
+        },
+    },
     'towerfall_ascension': {
         PLATFORM_DEFAULT: {
             'config': ('.local', 'share', 'TowerFall'),
@@ -499,6 +537,16 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
                       '233980', 'remote'),
+        },
+    },
+    'vvvvvv': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'VVVVVV'),
+        },
+    },
+    'waking_mars': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'WakingMars'),
         },
     },
     'war_thunder': {
