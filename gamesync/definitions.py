@@ -31,6 +31,11 @@ DEFINITIONS = {
             'saves': ('My Games', 'Age of Empires 3'),
         },
     },
+    'ai_war': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Arcen Games, LLC', 'AI War'),
+        },
+    },
     'anno_1404': {
         PLATFORM_WINDOWS: {
             'profiles': ('AppData', 'Roaming', 'Ubisoft', 'Anno1404'),
@@ -69,6 +74,11 @@ DEFINITIONS = {
                       '107100', 'remote'),
         },
     },
+    'big_pharma': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Twice Circled', 'Big Pharma'),
+        },
+    },
     'borderlands_2': {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'aspyr-media', 'borderlands 2'),
@@ -85,6 +95,11 @@ DEFINITIONS = {
             'saves': ('.local', 'share', 'CaveStory+'),
         },
     },
+    'chroma_squad': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Behold Studios', 'Chroma Squad'),
+        },
+    },
     'cities_skylines': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Colossal Order',
@@ -97,7 +112,7 @@ DEFINITIONS = {
             'config': ('.config', 'creeperworld3'),
             'preferences': ('.config', 'unity3d', 'Knuckle Cracker LLC',
                             'Creeper World 3'),
-            'saves': ('Documents', 'creeperworld3'),
+            'saves': ('Documents', 'CreeperWorld3'),
         },
     },
     'door_kickers': {
@@ -126,6 +141,11 @@ DEFINITIONS = {
                       '244870', 'remote'),
         },
     },
+    'factorio': {
+        PLATFORM_DEFAULT: {
+            'all': ('.factorio', ),
+        },
+    },
     'fallout_new_vegas': {
         PLATFORM_DEFAULT: {
             'saves': ('My Documents', 'My Games', 'FalloutNV', 'Saves'),
@@ -144,6 +164,12 @@ DEFINITIONS = {
                       '249990', 'remote'),
         },
     },
+    'girls_like_robots': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Popcannibal',
+                       'Girls Like Robots'),
+        },
+    },
     'godus': {
         PLATFORM_DEFAULT: {
             'saves': ('Library', 'Application Support', 'godus'),
@@ -155,10 +181,21 @@ DEFINITIONS = {
                        'GunsOfIcarusOnline'),
         },
     },
+    'hand_of_fate': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Defiant Development',
+                       'Hand of Fate'),
+        },
+    },
     'hearthstone': {
         PLATFORM_DEFAULT: {
             'preferences': ('Library', 'Preferences', 'Blizzard',
                             'Heartstone'),
+        },
+    },
+    'hot_tin_roof': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Glass Bottom Games', 'Revolver'),
         },
     },
     'human_resource_machine': {
@@ -234,11 +271,23 @@ DEFINITIONS = {
                       '113020', 'remote'),
         },
     },
+    'monster_loves_you': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Radial Games Corp_',
+                       'Monster Loves You!'),
+        },
+    },
     'mushroom_11': {
         PLATFORM_DEFAULT: {
             'config': ('.config', 'unity3d', 'Untame', 'Mushroom 11'),
             'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
                       '243160', 'remote'),
+        },
+    },
+    'ninja_pizza_girl': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Disparity Games',
+                       'Ninja Pizza Girl'),
         },
     },
     'pillars_of_eternity': {
@@ -271,6 +320,12 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'binary.zip': ('.vbam', 'Pokemon Trading Card Game.zip'),
             'savefile.sav': ('.wxvbam', 'Pokemon Trading Card Game (USA).sav'),
+        },
+    },
+    'pony_island': {
+        PLATFORM_DEFAULT: {
+            'config': ('.config', 'unity3d', 'Daniel Mullins Games',
+                       'Pony Island'),
         },
     },
     'prison_architect': {
