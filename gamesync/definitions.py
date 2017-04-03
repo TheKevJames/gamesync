@@ -1,3 +1,4 @@
+# pylint: disable=too-many-lines
 import os
 import platform
 
@@ -401,6 +402,12 @@ DEFINITIONS = {
         PLATFORM_DEFAULT: {
             'saves': ('.local', 'share', 'Steam', 'userdata', STEAM_ID,
                       '97000', 'remote'),
+        },
+    },
+    'space_chem': {
+        PLATFORM_DEFAULT: {
+            'saves': ('.local', 'share', 'Zachtronics Industries',
+                      'SpaceChem'),
         },
     },
     'space_pirates_and_zombies': {
